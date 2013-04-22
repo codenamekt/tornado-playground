@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% end %}
+
+{% block body %}
+<div class="row-fluid">
+  <div class="container-fluid span8 offset2">
+    <form class="form-signin">
+    	<div class="navbar span12">
+  	  	<div class="navbar-inner span12">
+  	    	<a class="brand span8 offset2" href="#">Welcome</a>
+  	   	</div>
+  	  </div>
+      <ul class="nav nav-pills row-fluid">
+        <li class="icon- span1 offset1"><a href="/google_login">&#xf0d4;</a></li>
+      </ul>
+      <div class="row-fluid">
+        <input type="text" class="input-block-level span10 offset1" placeholder="Email address">
+      </div>
+      <div class="row-fluid">
+        <input type="password" class="input-block-level span10 offset1" placeholder="Password">
+      </div>
+      <div class="row-fluid">
+        <label class="checkbox span6 offset1">
+          <input type="checkbox" value="remember-me">Remember Me</input>
+        </label>
+        <button class="btn btn-primary span3 offset1" type="submit">Go!</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% end %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/font-awesome.css" media="screen">
+<link href="static/css/login.css" rel="stylesheet" media="screen">
+{% end %}
